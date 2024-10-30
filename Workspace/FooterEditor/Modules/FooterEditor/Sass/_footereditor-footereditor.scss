@@ -1,0 +1,219 @@
+/*
+  Sass Application Entry Point
+  Link all your sass dependencies in the right order
+*/
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Press+Start+2P&display=swap');
+@import url('https://use.typekit.net/duk3ixk.css');
+
+// Define color variables
+$background-color: black;
+$text-color-secondary: #b5b5b5;
+$hover-color: #bc0000;
+$border-color: #ffffff;
+$info-card-bg: black;
+$font-family-default: "Proxima Nova", sans-serif;
+
+// Mixin for flex container
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+// Extendable styles for info card
+.info-card {
+  // Add info card styles here if needed
+}
+
+.info-card-content {
+  // Add info card content styles here if needed
+}
+
+// Footer Editor Styles
+.footereditor-info-card {
+  @extend .info-card;
+  background-color: $info-card-bg;
+  margin: 0;
+  font-family: $font-family-default;
+  border: 1px solid #000000;
+  max-width: 1245px; // Fixed max-width for proper display
+}
+
+.footereditor-info-card-content {
+  @extend .info-card-content;
+  color: $text-color-secondary;
+  font-weight: bold;
+}
+
+.footer-content {
+  background-color: $background-color;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.footer-copyright-content {
+  background-color: $background-color;
+  margin: 0;
+}
+
+#signupRow {
+  margin-right: 15%;
+  margin-left: 15%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#signupMessage {
+  text-align: right;
+  color: $text-color-secondary;
+
+  @media (max-width: 991px) {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+#companyDetails {
+  text-align: justify;
+  padding-left: 5%;
+
+  @media (max-width: 1245px) {
+    padding-left: 0;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+#emailAdder {
+  @include flex-center; // Use the flex mixin
+  gap: 5px;
+}
+
+#emailAdder input {
+  background-color: $background-color;
+  color: white;
+  border: none;
+  border-bottom: 2px solid $border-color;
+  width: 100%;
+
+  &::placeholder {
+    padding-left: 10px;
+    color: white;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $border-color;
+  }
+}
+
+#emailAdder button {
+  background-color: $border-color;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, font-size 0.3s ease, padding-right 0.3s ease;
+  font-size: 16px;
+  @include flex-center;
+  gap: 8px;
+
+  &:hover {
+    background-color: $border-color;
+    font-size: 18px;
+    padding-right: 24px;
+  }
+}
+
+.button-icon {
+  width: 16px;
+  height: 16px;
+  fill: rgb(0, 0, 0);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-10px);
+
+  #emailAdder button:hover & {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#secondFooter {
+  padding: 15px;
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    padding-top: 15px;
+  }
+
+  a {
+    color: $text-color-secondary;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 0;
+    display: inline-block;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+#detailColumn {
+  text-align: left;
+  width: 20%;
+  float: left;
+  vertical-align: top;
+  padding: 15px;
+}
+
+#footerLogo {
+  width: 178.56px;
+  height: 50px;
+}
+
+.global-views-back-to-top {
+  background: $background-color;
+  border-bottom: 1px solid #000000;
+}
+
+.icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+}
+
+.footereditor-info-card-content {
+  float: inline-end;
+  color: $text-color-secondary;
+}
+
+#storeName,
+#storeAddress {
+  padding-left: 25px;
+  letter-spacing: 1.5px;
+}
+
+#storeAddress {
+  max-width: 200px;
+  word-wrap: break-word;
+  white-space: normal;
+  margin-left: 25px;
+}

@@ -1,0 +1,107 @@
+{
+    "name": "FooterEditor",
+    "fantasyName": "FooterEditor",
+    "vendor": "jj",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=24.1.2",
+        "SCS": ">=24.1.2"
+    },
+    "description": "For editing the footer",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/FooterEditor.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/FooterEditor/Configuration/FooterEditor.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/FooterEditor/Sass/_footereditor-footereditor.scss",
+            "myaccount": "Modules/FooterEditor/Sass/_footereditor-footereditor.scss",
+            "checkout": "Modules/FooterEditor/Sass/_footereditor-footereditor.scss"
+        },
+        "files": [
+            "Modules/FooterEditor/Sass/_footereditor-footereditor.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/FooterEditor/Templates/jj_footereditor_footereditor.tpl"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/FooterEditor/Templates/jj_footereditor_footereditor.tpl"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/FooterEditor/Templates/jj_footereditor_footereditor.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
+            "myaccount": "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
+            "checkout": "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
+                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js",
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.Model.js",
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.SS2Model.js"
+                ]
+            },
+            "myaccount": {
+                "files": [
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
+                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js",
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.Model.js",
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.SS2Model.js"
+                ]
+            },
+            "checkout": {
+                "files": [
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
+                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js",
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.Model.js",
+                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/FooterEditor/SuiteScript/jj.FooterEditor.FooterEditor.js",
+        "files": [
+            "Modules/FooterEditor/SuiteScript/jj.FooterEditor.FooterEditor.js",
+            "Modules/FooterEditor/SuiteScript/FooterEditor.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\FooterEditor",
+    "suitescript2": {
+        "files": [
+            "Modules/FooterEditor/SuiteScript2/FooterEditor.Service.ss"
+        ]
+    }
+}
