@@ -68,25 +68,21 @@
             "shopping": {
                 "files": [
                     "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
-                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js",
-                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.Model.js",
-                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.SS2Model.js"
+                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js"
+
                 ]
             },
             "myaccount": {
                 "files": [
                     "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
-                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js",
-                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.Model.js",
-                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.SS2Model.js"
+                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js"
+
                 ]
             },
             "checkout": {
                 "files": [
                     "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.js",
-                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js",
-                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.Model.js",
-                    "Modules/FooterEditor/JavaScript/jj.FooterEditor.FooterEditor.SS2Model.js"
+                    "Modules/FooterEditor/JavaScript/FooterEditor.View.js"
                 ]
             }
         }
@@ -94,14 +90,13 @@
     "ssp-libraries": {
         "entry_point": "Modules/FooterEditor/SuiteScript/jj.FooterEditor.FooterEditor.js",
         "files": [
-            "Modules/FooterEditor/SuiteScript/jj.FooterEditor.FooterEditor.js",
-            "Modules/FooterEditor/SuiteScript/FooterEditor.ServiceController.js"
+            "Modules/FooterEditor/SuiteScript/jj.FooterEditor.FooterEditor.js"
         ]
     },
     "local_folder": "Workspace\\FooterEditor",
     "suitescript2": {
         "files": [
-            "Modules/FooterEditor/SuiteScript2/FooterEditor.Service.ss"
+           
         ]
     }
 }
